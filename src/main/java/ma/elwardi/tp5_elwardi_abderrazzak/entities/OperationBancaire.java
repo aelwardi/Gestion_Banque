@@ -7,10 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/**
- *
- * @author Heisenberg
- */
+
 @Entity
 public class OperationBancaire implements Serializable {
 
@@ -49,7 +46,6 @@ public class OperationBancaire implements Serializable {
     public void setMontant(int montant) {
         this.montant = montant;
     }
-
     public OperationBancaire() {
     }
 
