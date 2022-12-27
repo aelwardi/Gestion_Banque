@@ -57,6 +57,13 @@
                                         value="Modifier le nom"
                                         outcome="modifierNom?id=#{item.id}"  />
                             </p:column>
+                            <p:column>
+                                <f:facet name="header">
+                                    <h:outputText escape="false" value="Historique&lt;br/>opérations"/>
+                                </f:facet>
+                                <h:link outcome="compteDetails?idCustomer=#{item.id}" 
+                                        value="Détails"/>
+                            </p:column>
                         </p:dataTable>
                         <p:confirmDialog global="true">
                             <p:commandButton value="Oui" type="button" 
